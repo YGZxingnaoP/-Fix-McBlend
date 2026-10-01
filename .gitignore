@@ -1,0 +1,49 @@
+# ============================================================
+#  Mcblend — Blender 插件（Minecraft Bedrock 模型/动画导入导出）
+#  仓库根目录 = 本文件所在目录（里面是 mcblend/ 插件目录）
+# ============================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---------- 本地部署脚本（xcopy 到 Blender 插件目录，含本机路径）----------
+apply_to_blender.bat
+
+# ---------- Blender 工程 / 打包产物 ----------
+*.blend
+*.blend[0-9]
+*.blend1
+*.blend2
+*.blend@
+*.zip
+
+# ---------- 编辑器 / 系统 ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 临时与分析脚本（下划线开头，临时文件用）----------
+_*.py
+_*.txt
+_*.log
+*.log
+
+# ---------- Bedrock 素材：默认不上传 ----------
+# 模型/动画属于模型作者与 Mojang EULA 的范畴，与插件 MIT 许可无关。
+# 如果你想在仓库里附示例模型，把下面两行注释掉即可。
+*.geo.json
+*.animation.json
